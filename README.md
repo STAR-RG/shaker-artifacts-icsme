@@ -21,15 +21,11 @@ SHAKER is a lightweight approach to detect flakiness in time-constrained tests b
 
 For each project where we found flaky tests, we opened issues:
 
-### Issues answered
-* [AntennaPod](https://github.com/AntennaPod/AntennaPod/issues/4194)
-* [FirefoxLite](https://github.com/mozilla-tw/FirefoxLite/issues/5013)
-* [WiFiAnalyzer](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer/issues/298)
-
-### Issues not yet answered
-
+* [AntennaPod (answered)](https://github.com/AntennaPod/AntennaPod/issues/4194)
+* [FirefoxLite (answered)](https://github.com/mozilla-tw/FirefoxLite/issues/5013)
 * [Espresso](https://github.com/TonnyL/Espresso/issues/22)
 * [Kiss](https://github.com/Neamar/KISS/issues/1509)
 * [Omni-Notes](https://github.com/federicoiosue/Omni-Notes/issues/761)
 * [Orgzly](https://github.com/orgzly/orgzly-android/issues/722)
 * [Paintroid](https://jira.catrob.at/browse/PAINTROID-166)
+* [WiFiAnalyzer (answered)](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer/issues/298)
