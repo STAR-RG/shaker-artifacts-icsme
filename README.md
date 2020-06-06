@@ -28,4 +28,4 @@ For each project where we found flaky tests, we opened issues:
 * [Omni-Notes](https://github.com/federicoiosue/Omni-Notes/issues/761)
 * [Orgzly](https://github.com/orgzly/orgzly-android/issues/722)
 * [Paintroid](https://jira.catrob.at/browse/PAINTROID-166)
-* [WiFiAnalyzer (answered)](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer/issues/298)
+* [WiFiAnalyzer](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer/issues/298)
