@@ -1,9 +1,9 @@
 # Shaker
 
 SHAKER is a lightweight approach to detect flakiness in time-constrained tests by adding noise in the execution environment. This repository is organized in the following structure:
-- the [`dataset`] folder contains the set of flaky tests we used in the paper;
-- the [`raw_results`] folder contains the raw data produced from the evaluation we performed; 
-- the [`evaluation`] folder contains the toolset developed for running `Shaker` and producing the raw data described above.
+- the [`dataset`](dataset) folder contains the set of flaky tests we used in the paper;
+- the [`raw_results`](raw_results) folder contains the raw data produced from the evaluation we performed; 
+- the [`evaluation`](evaluation) folder contains the toolset developed for running `Shaker` and producing the raw data described above.
 
 ## Setup Instructions
 
@@ -61,7 +61,7 @@ Manually install the apps using Android Studio. Do so by opening each project an
 
 #### Executing Shaker
 
-This is all it takes for configuring the environment for running *Shaker* by using the predefined scripts for each research question from the paper, which are available at the `evaluation` folder.
+This is all it takes for configuring the environment for running *Shaker* by using the predefined scripts for each research question from the paper, which are available at the [`evaluation`](evaluation) folder.
 
 ## Apps used as Objects of Analyses 
 
