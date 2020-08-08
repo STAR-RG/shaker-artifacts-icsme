@@ -1,9 +1,9 @@
 # Shaker
 
 SHAKER is a lightweight approach to detect flakiness in time-constrained tests by adding noise in the execution environment. This repository is organized in the following structure:
-- the `dataset` folder contains the set of flaky tests we used in the paper;
-- the `raw_results` folder contains the raw data produced from the evaluation we performed; 
-- the `evaluation` folder contains the toolset developed for running `Shaker` and producing the raw data described above.
+- the [`dataset`] folder contains the set of flaky tests we used in the paper;
+- the [`raw_results`] folder contains the raw data produced from the evaluation we performed; 
+- the [`evaluation`] folder contains the toolset developed for running `Shaker` and producing the raw data described above.
 
 ## Setup Instructions
 
