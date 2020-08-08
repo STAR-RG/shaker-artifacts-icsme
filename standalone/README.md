@@ -1,6 +1,8 @@
 # How to run Shaker in your app
 
-We assume that `emulator` is already configured in the environment. Typically you can find it under the `Sdk` folder of your Android installation, for instance `$HOME/Android/Sdk/emulator/emulator`.
+We assume that `emulator` is already configured in the environment. Typically you can find it under the `Sdk` folder of your Android installation, for instance `$HOME/Android/Sdk/emulator/emulator`. 
+
+Additionally, we assume the app and tests are already installed into the emulator. 
 
 #### 1. Run emulator device
 Run the emulator by executing `emulator @d &`. This yields the PID of the emulator
