@@ -3,7 +3,8 @@
 SHAKER is a lightweight approach to detect flakiness in time-constrained tests by adding noise in the execution environment. This repository is organized in the following structure:
 - the [`dataset`](dataset) folder contains the set of flaky tests we used in the paper;
 - the [`raw_results`](raw_results) folder contains the raw data produced from the evaluation we performed; 
-- the [`evaluation`](evaluation) folder contains the toolset developed for running `Shaker` and producing the raw data described above.
+- the [`evaluation`](evaluation) folder contains the toolset developed for running `Shaker` against the apps listed below and producing the raw data described above.
+- the [`standalone`](standalone) folder contains the instructions for running `Shaker` in other apps.
 
 ## Setup Instructions
 
@@ -46,11 +47,11 @@ $ $HOME/Android/Sdk/tools/bin/avdmanager create avd --name d --package "system-i
 ```
 
 #### Download the apps:
-To download the apps and use the exactly same commit that we used for each app, execute the following script:
+To download the apps and use the exactly same commit that we used for each app, execute the `install_apps.sh` script located in the [`evaluation`](evaluation) folder:
 ```
 $ ./install_apps.sh
 ```
-This will create a folder called `projects` with all the projects used
+This will create a folder called `projects` with all the projects used in our evaluation, already checked out at the SHA commit that we evaluated.
 
 #### Install the apps in AVD
 Start the AVD:
