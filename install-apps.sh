@@ -11,5 +11,5 @@ fi
 APKS=$APK_DIR/*.apk
 for apk in $APKS
 do
-  adb install $APK_DIR/$apk
+  adb install $apk
 done
