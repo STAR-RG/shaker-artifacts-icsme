@@ -17,7 +17,7 @@ NUMBER_RANGE = 30
 
 if len(argv) > 3:
     NUMBER_RANGE = int(argv[2])
-    PID = int(argv[2])
+    PID = int(argv[3])
     print('Number of ranges is %d\nPID emulator is %d' % (NUMBER_RANGE, PID))
 
 
