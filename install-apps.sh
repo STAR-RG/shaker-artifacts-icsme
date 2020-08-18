@@ -13,5 +13,5 @@ for apk in $APKS
 do
   APP_NAME=$(basename $apk)
   echo "Installing $APP_NAME"
-  adb install $apk
+  adb install -t $apk
 done
