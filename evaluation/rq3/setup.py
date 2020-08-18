@@ -269,7 +269,7 @@ def main():
 
 
 if __name__ == "__main__":
-    if len(argv) == 54:
+    if len(argv) == 5:
         NUMBER_CONFIGS = int(argv[1])
         NUM_EXEC = NUMBER_CONFIGS
 

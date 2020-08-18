@@ -12,7 +12,7 @@ strategies=( "greedy" "MHS" "random" )
     cd rq3
     echo ""
     echo " >>>> Execute training phase (RQ3)"
-    python3 setup.py $NUM_CONFIGS $NUM_EXECS $THRESHOLD $PID_EMULATOR
+    python3 setup.py $NUM_CONFIGS $NUM_EXECS_TRAINING $THRESHOLD $PID_EMULATOR
     
     for strategy in "${strategies[@]}"
     do
