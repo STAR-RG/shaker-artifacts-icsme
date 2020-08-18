@@ -1,4 +1,5 @@
 #!/bin/bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 PATH_SDKMAN="./Android/cmdline-tools/tools/bin"
 PATH_ADB="./Android/platform-tools"
@@ -30,4 +31,4 @@ $PATH_SDKMAN/sdkmanager "system-images;android-28;default;x86"
 $PATH_SDKMAN/sdkmanager "build-tools;28.0.3"
 echo no | $PATH_SDKMAN/avdmanager create avd --name d --package "system-images;android-28;default;x86"
 
-source ./setvars.sh
+source $DIR/setvars.sh

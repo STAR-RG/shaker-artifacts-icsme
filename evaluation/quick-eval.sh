@@ -1,6 +1,11 @@
 #!/bin/bash
 
-PID_EMULATOR=$1
+if [[ $(pgrep qemu) ]]; then
+    PID_EMULATOR=$(pgrep qemu)
+else
+    echo "You need to have a running emulator to execute the scripts"
+    exit 1
+fi
 
 ### RQ1
 NUM_EXECS_RQ1="1"
