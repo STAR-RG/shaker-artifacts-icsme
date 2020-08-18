@@ -1,0 +1,19 @@
+#!/bin/bash
+
+### RQ1
+PID_EMULATOR=$1
+NUM_EXECS_RQ1=$2
+RUN_STATS_RQ1=$3
+
+./rq1.sh $PID_EMULATOR $NUM_EXECS_RQ1 $RUN_STATS_RQ1
+
+### RQ2
+
+
+### RQ3
+
+
+### RQ4
+
+
+### RQ5
