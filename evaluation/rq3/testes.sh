@@ -46,72 +46,72 @@ do
   adb shell am instrument -w -r    -e class io.github.marktony.espresso.packages.AppNavigationTest#clickOnNavigationDrawerItem_ChangeTheme -e debug false io.github.marktony.espresso.test/android.support.test.runner.AndroidJUnitRunner >> $file
   echo -n "."
   adb shell am instrument -w -r    -e class com.orgzly.android.espresso.BooksSortOrderTest#books_sortOrderAfterSettingsChange -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class com.orgzly.android.espresso.CreatedAtPropertyTest#testCondition -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class com.orgzly.android.espresso.CreatedAtPropertyTest#testNewNote -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class com.orgzly.android.espresso.MiscTest#testScheduledWithRepeaterToDoneFromNoteFragment -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class com.orgzly.android.espresso.MiscTest#testBookReparseOnStateConfigChange -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class com.orgzly.android.espresso.NoteFragmentTest#testChangingStateSettingsFromNoteFragment -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class com.orgzly.android.espresso.QueryFragmentTest#testInheritedTagsAfterMovingNote -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class com.orgzly.android.espresso.SettingsFragmentTest#testDefaultPriorityUpdateOnLowestPriorityChange -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class com.orgzly.android.espresso.SyncingTest#testAutoSyncIsTriggeredAfterCreatingNote -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class com.orgzly.android.espresso.SyncingTest#testBookParsingAfterKeywordsSettingChange -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class com.orgzly.android.espresso.SettingsChangeTest#testChangeDefaultPriorityAgendaResultsShouldBeReordered -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class com.orgzly.android.espresso.CreatedAtPropertyTest#testCondition -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class com.orgzly.android.espresso.CreatedAtPropertyTest#testNewNote -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class com.orgzly.android.espresso.MiscTest#testScheduledWithRepeaterToDoneFromNoteFragment -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class com.orgzly.android.espresso.MiscTest#testBookReparseOnStateConfigChange -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class com.orgzly.android.espresso.NoteFragmentTest#testChangingStateSettingsFromNoteFragment -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class com.orgzly.android.espresso.QueryFragmentTest#testInheritedTagsAfterMovingNote -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class com.orgzly.android.espresso.SettingsFragmentTest#testDefaultPriorityUpdateOnLowestPriorityChange -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class com.orgzly.android.espresso.SyncingTest#testAutoSyncIsTriggeredAfterCreatingNote -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class com.orgzly.android.espresso.SyncingTest#testBookParsingAfterKeywordsSettingChange -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class com.orgzly.android.espresso.SettingsChangeTest#testChangeDefaultPriorityAgendaResultsShouldBeReordered -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
   echo -n "."
   adb shell am instrument -w -r  --no-window-animation  -e debug false -e class de.test.antennapod.playback.PlaybackTest#testReplayEpisodeContinuousPlaybackOff[builtin] de.test.antennapod/androidx.test.runner.AndroidJUnitRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r  --no-window-animation  -e debug false -e class de.test.antennapod.playback.PlaybackTest#testReplayEpisodeContinuousPlaybackOff[sonic] de.test.antennapod/androidx.test.runner.AndroidJUnitRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r  --no-window-animation  -e debug false -e class de.test.antennapod.playback.PlaybackTest#testReplayEpisodeContinuousPlaybackOff[sonic] de.test.antennapod/androidx.test.runner.AndroidJUnitRunner >> $file
   echo -n "."
   adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.BookmarksTest#editBookmarkWithChangingContent_bookmarkIsUpdated -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.SearchFieldTest#typeTextInSearchFieldAndClear_textIsClearedAndBackToHome -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.BookmarksTest#editBookmarkWithVariousWords_bookmarkIsUpdated -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.ShareWithFriendTest#shareWithFriends -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.SearchFieldTest#typeTextInSearchFieldAndClear_textIsClearedAndBackToHome -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.BookmarksTest#editBookmarkWithVariousWords_bookmarkIsUpdated -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.ShareWithFriendTest#shareWithFriends -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
   echo -n "."
   adb shell am instrument -w -r    -e class com.google.android.flexbox.test.FlexboxLayoutManagerTest#testChangeAttributesFromCode -e debug false com.google.android.flexbox.test/androidx.test.runner.AndroidJUnitRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r  --no-window-animation  -e debug false -e class de.test.antennapod.playback.PlaybackTest#testReplayEpisodeContinuousPlaybackOn[sonic] de.test.antennapod/androidx.test.runner.AndroidJUnitRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r  --no-window-animation  -e debug false -e class de.test.antennapod.playback.PlaybackTest#testReplayEpisodeContinuousPlaybackOn[sonic] de.test.antennapod/androidx.test.runner.AndroidJUnitRunner >> $file
   echo -n "."
   adb shell am instrument -w -r    -e class org.catrobat.paintroid.test.espresso.tools.ShapeToolIntegrationTest#testRememberOutlineShapeAfterOrientationChange[Square] -e debug false org.catrobat.paintroid.test/android.support.test.runner.AndroidJUnitRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class org.catrobat.paintroid.test.espresso.LandscapeIntegrationTest#testFullscreenPortraitOrientationChangeWithShape -e debug false org.catrobat.paintroid.test/android.support.test.runner.AndroidJUnitRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r  --no-window-animation  -e debug false -e class de.test.antennapod.playback.PlaybackTest#testContinousPlaybackOffSingleEpisode[builtin] de.test.antennapod/androidx.test.runner.AndroidJUnitRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r  --no-window-animation  -e debug false -e class de.test.antennapod.playback.PlaybackTest#testStartLocal[sonic] de.test.antennapod/androidx.test.runner.AndroidJUnitRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.NavigationTest#browsingWebsiteBackAndForward_backAndFrowardToWebsite -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class org.catrobat.paintroid.test.espresso.LandscapeIntegrationTest#testFullscreenPortraitOrientationChangeWithShape -e debug false org.catrobat.paintroid.test/android.support.test.runner.AndroidJUnitRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r  --no-window-animation  -e debug false -e class de.test.antennapod.playback.PlaybackTest#testContinousPlaybackOffSingleEpisode[builtin] de.test.antennapod/androidx.test.runner.AndroidJUnitRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r  --no-window-animation  -e debug false -e class de.test.antennapod.playback.PlaybackTest#testStartLocal[sonic] de.test.antennapod/androidx.test.runner.AndroidJUnitRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.NavigationTest#browsingWebsiteBackAndForward_backAndFrowardToWebsite -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
   echo -n "."
   adb shell am instrument -w -r    -e class fr.neamar.kiss.androidTest.MainActivityTest#testSearchResultAppears -e debug false fr.neamar.kiss.debug.test/androidx.test.runner.AndroidJUnitRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r  --no-window-animation  -e debug false -e class de.test.antennapod.playback.PlaybackTest#testStartLocal[exoplayer] de.test.antennapod/androidx.test.runner.AndroidJUnitRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.SearchSuggestionTest#clickSearchSuggestion_browseByDefaultSearchEngine -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class org.catrobat.paintroid.test.espresso.tools.ShapeToolIntegrationTest#testRememberOutlineShapeAfterOrientationChange[Heart] -e debug false org.catrobat.paintroid.test/android.support.test.runner.AndroidJUnitRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.RemoveTopSitesTest#deleteTopSite_deleteSuccessfully -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.BookmarksTest#addBookmarkAndEdit_bookmarkIsUpdated -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class com.orgzly.android.espresso.SettingsFragmentTest#testStateSummaryAfterNoStates -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class com.orgzly.android.espresso.NoteFragmentTest#testMetadataShowSelectedOnNoteLoad -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r    -e class com.orgzly.android.espresso.CreatedAtPropertyTest#testChangeCreatedAtPropertyResultsShouldBeReordered -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
-  echo -n "."
-  adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.BookmarksTest#editBookmarkWithClearingLocationContent_saveButtonIsDisabled -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r  --no-window-animation  -e debug false -e class de.test.antennapod.playback.PlaybackTest#testStartLocal[exoplayer] de.test.antennapod/androidx.test.runner.AndroidJUnitRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.SearchSuggestionTest#clickSearchSuggestion_browseByDefaultSearchEngine -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class org.catrobat.paintroid.test.espresso.tools.ShapeToolIntegrationTest#testRememberOutlineShapeAfterOrientationChange[Heart] -e debug false org.catrobat.paintroid.test/android.support.test.runner.AndroidJUnitRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.RemoveTopSitesTest#deleteTopSite_deleteSuccessfully -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.BookmarksTest#addBookmarkAndEdit_bookmarkIsUpdated -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class com.orgzly.android.espresso.SettingsFragmentTest#testStateSummaryAfterNoStates -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class com.orgzly.android.espresso.NoteFragmentTest#testMetadataShowSelectedOnNoteLoad -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r    -e class com.orgzly.android.espresso.CreatedAtPropertyTest#testChangeCreatedAtPropertyResultsShouldBeReordered -e debug false com.orgzly.test/com.orgzly.android.OrgzlyTestRunner >> $file
+  # echo -n "."
+  # adb shell am instrument -w -r -e disableAnalytics true -e clearPackageData true --no-window-animation  -e class org.mozilla.focus.activity.BookmarksTest#editBookmarkWithClearingLocationContent_saveButtonIsDisabled -e debug false org.mozilla.rocket.debug.denini.test/org.mozilla.focus.test.runner.CustomTestRunner >> $file
 
   echo "."
   echo "Finished."

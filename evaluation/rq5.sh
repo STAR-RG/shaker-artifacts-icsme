@@ -3,7 +3,8 @@
 PID_EMULATOR=$1
 NUM_EXECS_SHAKER=$2
 
-apps=( "anymemo" "antennapod" "espresso" "orgzly" "firefoxlite" "susi" "paintroid" "omninotes" "kiss" "wifi" )
+# apps=( "anymemo" "antennapod" "espresso" "orgzly" "firefoxlite" "susi" "paintroid" "omninotes" "kiss" "wifi" )
+apps=( "wifi" )
 
 (
     cd rq5
