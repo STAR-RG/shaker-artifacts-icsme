@@ -14,7 +14,7 @@ shouldprint = False
 showln = False
 scores = []
 score_config = []
-
+PID = '111'
 
 def parserTests(path, file_):
     testsFails = {}
@@ -87,8 +87,8 @@ def parserData(output, file):
 
 def runTests(config, file):
     os.chdir(REAL_DIR)
-    test = f'./exec_stress.sh {config[0]} {config[1]} {config[2]} {config[3]} {config[4]} {config[5]} {file}'
-    print("runing %s" % test)
+    test = f'./exec_stress.sh {config[0]} {config[1]} {config[2]} {config[3]} {config[4]} {config[5]} {file} {PID}'
+    print("running %s" % test)
     process = subprocess.Popen(test, stdout=subprocess.PIPE, shell=True)
     stdout = process.communicate()[0].decode("utf-8")
     if shouldprint:
@@ -129,7 +129,7 @@ if __name__ == "__main__":
         NUMBER_RANGE = int(argv[1])
         NUMBER_REPEAT = int(argv[2])
         PID = int(argv[3])
-        print('number of ranges is %d\nnumber repetat is %d\nPID emulator is %d' %
+        print('number of ranges is %d\nnumber repeat is %d\nPID emulator is %d' %
               (NUMBER_RANGE, NUMBER_REPEAT, PID))
         main()
     else:

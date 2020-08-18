@@ -269,7 +269,7 @@ def main():
 
 
 if __name__ == "__main__":
-    if len(argv) == 5:
+    if len(argv) == 54:
         NUMBER_CONFIGS = int(argv[1])
         NUM_EXEC = NUMBER_CONFIGS
 
@@ -278,7 +278,7 @@ if __name__ == "__main__":
         THERESHOLD = float(argv[3])
         P = THERESHOLD
         PID = int(argv[4])
-        print('number of configs is %d\nnumber repetat is %d\nTHERESHOLD is %.2f\nPID emulator is %d' %
+        print('number of configs is %d\number repeat is %d\nTHRESHOLD is %.2f\nPID emulator is %d' %
               (NUMBER_CONFIGS, NUM_EXEC, THERESHOLD, PID))
         main()
     else:

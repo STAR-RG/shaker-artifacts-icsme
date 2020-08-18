@@ -1,6 +1,6 @@
 #!/bin/bash
 
-emulator=$7
+emulator=$8
 
 ##stress
 if [ $6 == 1 ]
