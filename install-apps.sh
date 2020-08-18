@@ -11,5 +11,7 @@ fi
 APKS=$APK_DIR/*.apk
 for apk in $APKS
 do
+  APP_NAME=$(basename $apk)
+  echo "Installing $APP_NAME"
   adb install $apk
 done
