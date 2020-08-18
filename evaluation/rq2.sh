@@ -6,7 +6,8 @@ NUM_EXECS=$3
 
 (
     cd rq2
+    echo ""
+    echo " >>>> Executing Noise Configurations to test variance of results"
     python3 exec.py $NUM_CONFIGS $NUM_EXECS $PID_EMULATOR
-    #TODO run R from command line? 
     Rscript variance.r
 )

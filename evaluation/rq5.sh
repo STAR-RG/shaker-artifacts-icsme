@@ -10,8 +10,10 @@ apps=( "anymemo" "antennapod" "espresso" "orgzly" "firefoxlite" "susi" "paintroi
     #Execute Shaker with each app
     for app in "${apps[@]}"
     do
+        echo ""
+        echo " >>>> Executing SHAKER on $app $NUM_EXECS_SHAKER times"
         python3 exec.py $NUM_EXECS_SHAKER $app $PID_EMULATOR
-        #TODO rename results.txt file?
+        mv results.txt $app.txt
     done
 
 )
