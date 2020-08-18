@@ -10,7 +10,7 @@ import time
 RERUNS = 1
 REAL_DIR = glob(os.getcwd())[0]
 OUT_DIR = REAL_DIR + '/outputs/'
-shouldprint = False
+shouldprint = True
 showln = False
 scores = []
 NUMBER_RANGE = 30
