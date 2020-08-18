@@ -1,10 +1,9 @@
 #!/bin/bash
 
-if ! type adb > /dev/null; then
-    source ./setvars.sh
+if [ $# -eq 0 ] then
+    ./runemulator.sh d no-gui 
+else
+    if [ $# -eq 1 ] then
+        ./runemulator.sh $1 no-gui & 
+    fi
 fi
-
-AVD_NAME=$1
-
-adb start-server
-emulator -avd $AVD_NAME -no-accel -no-boot-anim -no-window & 
