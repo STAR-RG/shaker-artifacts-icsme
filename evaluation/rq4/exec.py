@@ -132,10 +132,7 @@ def main():  # MHS
         cont = 0  # out.{cont}.txt
         for config in configs:
             cont += 1
-            histo = []
-            if config[0] in histo:
-                continue
-                # config.remove(config[0]) #remove the output path
+            runTests(config, cont)
             parserData(i, 'shaker', cont)
             p()
 

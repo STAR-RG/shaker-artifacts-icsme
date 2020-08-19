@@ -9,5 +9,7 @@ NUM_EXECS=$3
     echo ""
     echo " >>>> Executing Noise Configurations to test variance of results"
     python3 exec.py $NUM_CONFIGS $NUM_EXECS $PID_EMULATOR
+    
+    #TODO fix running R
     Rscript variance.r
 )

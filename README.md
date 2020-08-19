@@ -46,37 +46,48 @@ $HOME/Android/cmdline-tools/tools/bin/sdkmanager "system-images;android-28;defau
 $HOME/Android/cmdline-tools/tools/bin/sdkmanager "build-tools;28.0.3" 
 ```
 
-#### Create AVD device: 
+If you want to use another API version, such as 23, just change the numbers in `platforms` and `system-images`:
 ```
-echo no | $HOME/Android/cmdline-tools/tools/bin/avdmanager create avd --name d --package "system-images;android-28;default;x86"
+$HOME/Android/cmdline-tools/tools/bin/sdkmanager "platforms;android-28"
+$HOME/Android/cmdline-tools/tools/bin/sdkmanager "system-images;android-28;default;x86"
+```
+
+#### Create AVD device (Android API version 28): 
+```
+echo no | $HOME/Android/cmdline-tools/tools/bin/avdmanager create avd --name EmuAPI28 --package "system-images;android-28;default;x86"
+```
+
+If you want to use another API version, such as 23, just change the corresponding numbers:
+```
+echo no | $HOME/Android/cmdline-tools/tools/bin/avdmanager create avd --name EmuAPI23 --package "system-images;android-23;default;x86"
 ```
 
 #### Run the emulator
-If you just want to run the emulator created by the `setup.sh` script, just execute:
+To run the emulator created by the `setup.sh` script, just execute:
 ```
 ./runemulator.sh
 ```
 
-If you want to run a particular emulator that you have previously created, with a different name, just provide it as the first argument:
+This will run the `DEFAULT_EMULATOR` defined in the `runemulator.sh`. If you want to run a particular emulator that you have previously created, with a different name, change the variable inside the script or provide the name as the first argument:
 ```
 ./runemulator.sh AVD_NAME
 ```
 
-Finally, if you want to run in headless mode (`-no-window`), you might execute the following script that runs the default `@d` emulator: 
+Finally, if you want to run in headless mode (`-no-window`), you might execute the following script that runs the default emulator: 
 ```
 ./runemulator-nogui.sh
 ```
 
-Again, if you want to run a particular emulator that you have previously created, with a different name, just provide it as the first argument:
+Again, if you want to run a particular emulator that you have previously created, with a different name, change the variable inside the script or provide it as the first argument:
 ```
 ./runemulator-nogui.sh AVD_NAME
 ```
 
-After booting the emulator, the apps we have used for the evaluation can be installed using the [`install-apps.sh`](`install-apps.sh`) script.
+After finishing booting the emulator for the first time (wait for the boot complete message in the console), the apps we have used for the evaluation can be installed using the [`install-apps.sh`](`install-apps.sh`) script.
 
 #### Executing Shaker
 
-This is all it takes for configuring the environment for running *Shaker* by using the predefined scripts for each research question from the paper, which are available at the [`evaluation`](evaluation) folder.
+This is all it takes for configuring the environment for running *Shaker* by using the predefined scripts for each research question from the paper, which are available at the [`evaluation`](evaluation) folder. You can also run the `icsme2020-eval.sh` or `quick-eval.sh` to go through all RQs.
 
 ## Apps used as Objects of Analyses 
 

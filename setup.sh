@@ -27,8 +27,11 @@ mv cmdline-tools/ Android
 #Configure Android
 yes | $PATH_SDKMAN/sdkmanager --licenses
 $PATH_SDKMAN/sdkmanager "platforms;android-28"
+$PATH_SDKMAN/sdkmanager "platforms;android-23"
 $PATH_SDKMAN/sdkmanager "system-images;android-28;default;x86"
+$PATH_SDKMAN/sdkmanager "system-images;android-23;default;x86"
 $PATH_SDKMAN/sdkmanager "build-tools;28.0.3"
-echo no | $PATH_SDKMAN/avdmanager create avd --name d --package "system-images;android-28;default;x86"
+echo no | $PATH_SDKMAN/avdmanager create avd --name EmuAPI28 --package "system-images;android-28;default;x86"
+echo no | $PATH_SDKMAN/avdmanager create avd --name EmuAPI23 --package "system-images;android-23;default;x86"
 
 source $DIR/setvars.sh
