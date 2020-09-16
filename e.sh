@@ -18,4 +18,4 @@ boot_completed=false
 
 wait_emulator_to_be_ready
 echo "EMULATOR is ready"
-sleep 1
+sleep 5
