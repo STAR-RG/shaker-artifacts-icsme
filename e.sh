@@ -1,3 +1,4 @@
+#!/bin/bash
 function wait_emulator_to_be_ready() {
   adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill; done
   emulator @d -no-audio -no-boot-anim -no-window -accel on -gpu off &
