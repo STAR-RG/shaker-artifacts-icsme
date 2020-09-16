@@ -30,6 +30,5 @@ RUN apt-get install -y stress-ng python3 python3-pip nano
 ADD . shaker/
 WORKDIR /shaker/
 # avoid crash of emulator -> https://stackoverflow.com/a/55567774
-RUN sysctl net.ipv6.conf.all.disable_ipv6=0
+#RUN sysctl net.ipv6.conf.all.disable_ipv6=0
 # start emulator and install apps
-RUN ./e.sh && ./install-apps.sh
