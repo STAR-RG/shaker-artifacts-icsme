@@ -29,6 +29,3 @@ ENV PATH_EMULATOR=$HOME/Android/emulator
 RUN apt-get install -y stress-ng python3 python3-pip
 ADD . shaker/
 WORKDIR /shaker/
-RUN emulator @d -no-window &
-RUN sleep 20
-RUN ./install-apps.sh
