@@ -1,8 +1,8 @@
 #!/bin/bash
 mkdir logs
-./e.sh 2>&1 | tee logs/log.txt
+./e.sh
 cd test
- ./run.sh 2>&1 | tee -a ../logs/log.txt
+ ./run.sh
  python3 exec.py 2>&1 | tee -a ../logs/log.txt
 cd ..
 
