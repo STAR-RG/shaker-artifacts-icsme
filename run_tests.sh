@@ -1,9 +1,9 @@
 #!/bin/bash
 mkdir logs
-./e.sh > logs/log.txt
+./e.sh 2>&1 | tee logs/log.txt
 cd test
- ./run.sh >> ../logs/log.txt
- python3 exec.py  >> ../logs/log.txt
+ ./run.sh 2>&1 | tee -a ../logs/log.txt
+ python3 exec.py 2>&1 | tee -a ../logs/log.txt
 cd ..
 
 echo "Done!. The log is in /log"
