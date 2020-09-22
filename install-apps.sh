@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-APK_DIR=$DIR/apk
+APK_DIR=$DIR/ICSME2020/apk
 
 if ! type adb > /dev/null; then
     echo "Setting environment variables for adb and emulator"
