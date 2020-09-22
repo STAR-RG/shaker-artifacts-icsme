@@ -1,4 +1,0 @@
-test,class
-testExternalBarHiddenWhenViewingAllApps,fr.neamar.kiss.androidTest.FavoritesTest
-testKissBarEmptiesSearch,fr.neamar.kiss.androidTest.MainActivityTest
-testSearchResultAppears,fr.neamar.kiss.androidTest.MainActivityTest

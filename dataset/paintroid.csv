@@ -1,6 +1,0 @@
-tests,class
-testScrollToColorChooserOk,org.catrobat.paintroid.test.espresso.LandscapeIntegrationTest
-testColorPickerDialogSwitchTabsInLandscape,org.catrobat.paintroid.test.espresso.LandscapeIntegrationTest
-testRememberOutlineShapeAfterOrientationChange[Square],org.catrobat.paintroid.test.espresso.tools.ShapeToolIntegrationTest
-testFullscreenPortraitOrientationChangeWithShape,org.catrobat.paintroid.test.espresso.LandscapeIntegrationTest
-testRememberOutlineShapeAfterOrientationChange[Heart],org.catrobat.paintroid.test.espresso.tools.ShapeToolIntegrationTest

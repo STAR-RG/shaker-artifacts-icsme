@@ -1,0 +1,98 @@
+%% DON'T DO THIS IN ACM STYLE
+%%\renewcommand{\baselinestretch}{0.964}
+
+\newcommand{\tname}{\textsc{Shaker}} %% technique name
+\newcommand{\rerun}{ReRun}
+\newcommand{\rerunN}{ReRun$_N$}
+\newcommand{\ngen}{$\mathit{NG}$}
+\newcommand{\sng}{stress-ng}
+\newcommand{\artifactUrl}{\url{https://github.com/shaker-project/shaker}}
+\newcommand{\greedy}{Greedy}
+
+\newcommand{\tr}{$\mathit{TR}$}
+
+\newcommand{\Mar}[1]{[\textbf{Marcelo}:{\color{magenta} #1}]}
+\newcommand{\Leo}[1]{[\textbf{Leopoldo}:~{\color{blue} #1}]}
+\newcommand{\Den}[1]{[\textbf{Denini}:~{\color{brown} #1}]}
+
+\newcommand{\CodeIn}[1]{\begin{footnotesize}\texttt{#1}\end{footnotesize}}
+\newcommand{\Fix}[1]{\textbf{[\color{red}#1]}}
+\newcommand{\Ignore}[1]{}
+\newcommand{\myeg}{e.g.}
+\newcommand{\ie}{i.e.}
+\newcommand{\etc}{etc.}
+
+\newcommand{\ann}{ANN}
+\newcommand{\bmc}{BMC}
+\newcommand{\ibmc}{IBMC}
+\newcommand{\etal}{et al.}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+%\lstset{language=C,basicstyle=\small}
+\lstset{language=C,basicstyle=\small\ttfamily}
+\lstset{numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt}
+\lstset{tabsize=2}
+\lstset{firstnumber=1}
+\lstset{frame=single}
+%\lstset{float}
+\lstset{
+  basicstyle=\scriptsize\ttfamily,
+  keywordstyle=\scriptsize\ttfamily\bfseries,
+  language=C,             % choose the language of the code
+  %frame=, %single             % adds a frame around the code
+  aboveskip=0pt,
+  belowskip=0pt,
+  breaklines=true,           % sets automatic line breaking
+  breakatwhitespace=false,   % sets if automatic breaks should only happen at
+  showspaces=false,
+  %tabsize=2,                  % Groesse von Tabs
+  %extendedchars=true,         %
+  %breaklines=true,            % Zeilen werden Umgebrochen
+  %keywords=[2]{},
+  keywords={},
+  %% numbersep=0pt,              % Abstand der Nummern zum Text  
+  %% numbers=left,
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within  % your code
+  morekeywords={public, for, typedef, void, float, unsigned, short, int, ushort, assert,uchar,begin_thread,end_thread,join_thread,atomic,assume,static,extern,int,_Bool,return}  
+}
+
+\newcommand{\Space}[1]{}
+
+% other paragraphs
+\newcommand{\Contrib}[1]{$\star$#1}
+
+
+%% numbers 
+\newcommand{\numprojects}{11}
+\newcommand{\totalTests}{1,298}
+\newcommand{\numprojectsWithFlakies}{7}
+\newcommand{\numNewFlakies}{30}
+\newcommand{\numReRuns}{50}
+\newcommand{\numflakytestsds}{75}
+\newcommand{\percFlakyTestSds}{5.78}
+\newcommand{\numflakytraining}{35}
+\newcommand{\numflakytesting}{40}
+\newcommand{\numReRunstraining}{3}
+\newcommand{\numReRunstrainingLONG}{3}
+\newcommand{\numTestsAntenna}{250}
+\newcommand{\numTrainingSet}{35}
+\newcommand{\numTestingSet}{40}
+\newcommand{\numRandomConfigs}{50}
+\newcommand{\threshold}{0.66}
+\newcommand{\numExecutionsRQThree}{10}
+\newcommand{\numTotalNewFlaky}{61}
+%RQ4
+\newcommand{\numFlakyDetectedShaker}{38}
+\newcommand{\numFlakyDetectedReRun}{15}
+\newcommand{\percFlakyDetectedShaker}{95\%}
+\newcommand{\percFlakyDetectedReRun}{37.5\%}
+
+
+%%numbersRQ3
+\newcommand{\configsMHS}{$\{c_1, c_18, c_20, c_17\}$}
+\newcommand{\configsGreed}{$\{c_18, c_20, c_22, c_32\}$}
+\newcommand{\configsRandom}{$\{c_1,...\}$}

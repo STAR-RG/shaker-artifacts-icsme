@@ -1,0 +1,13 @@
+test,class
+testReplayEpisodeContinuousPlaybackOn[exoplayer],de.test.antennapod.playback.PlaybackTest
+testContinousPlaybackOffSingleEpisode[sonic],de.test.antennapod.playback.PlaybackTest
+testStartLocal[builtin],de.test.antennapod.playback.PlaybackTest
+testReplayEpisodeContinuousPlaybackOff[exoplayer],de.test.antennapod.playback.PlaybackTest
+testReplayEpisodeContinuousPlaybackOn[builtin],de.test.antennapod.playback.PlaybackTest
+testContinousPlaybackOffSingleEpisode[exoplayer],de.test.antennapod.playback.PlaybackTest
+testReplayEpisodeContinuousPlaybackOff[builtin],de.test.antennapod.playback.PlaybackTest
+testReplayEpisodeContinuousPlaybackOff[sonic],de.test.antennapod.playback.PlaybackTest
+testReplayEpisodeContinuousPlaybackOn[sonic],de.test.antennapod.playback.PlaybackTest
+testContinousPlaybackOffSingleEpisode[builtin],de.test.antennapod.playback.PlaybackTest
+testStartLocal[sonic],de.test.antennapod.playback.PlaybackTest
+testStartLocal[exoplayer],de.test.antennapod.playback.PlaybackTest

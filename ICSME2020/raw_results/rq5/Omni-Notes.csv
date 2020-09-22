@@ -1,0 +1,5 @@
+test,class
+remindersLifecycle,it.feio.android.omninotes.ui.RemindersLifecycleTest
+recurrenceRuleTextHasValue,it.feio.android.omninotes.ui.RecurrenceRuleTest
+testGetNoteRecurrentReminderText,it.feio.android.omninotes.utils.date.RecurrenceHelperTest
+getNotesByPatternEscaped,it.feio.android.omninotes.db.DbHelperTest
