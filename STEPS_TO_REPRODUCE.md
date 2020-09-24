@@ -1,4 +1,7 @@
+
+ * Check if you environment has support to [hardware acceleration](https://developer.android.com/studio/run/emulator-acceleration#vm-linux-check-kvm)
 You can build a docker image or uses the image from shaker in dockerhub.
+
 
 #### Building the docker image
 
