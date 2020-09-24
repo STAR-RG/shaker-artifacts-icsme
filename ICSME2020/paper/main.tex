@@ -78,7 +78,7 @@ Test flakiness hurts software testing practice in multiple ways. For example, Th
 Test flakiness is a huge problem in industry. Most test failures at Google are due to flaky tests~\cite{john-mico-google2016,jeff-listfield-google2017}. At Microsoft, the presence of flaky tests also imposes a significant burden on developers. Wing~\etal{}~\cite{wing-etal-issta11} reported that 58 Microsoft developers involved in a survey considered flaky tests to be the second most important reason, out of 10 reasons, for slowing down software deployments. Finally, Facebook considers flakiness detection a priority~\cite{DBLP:conf/scam/HarmanO18}. 
 
 \rerun\ is the most popular approach in industry to detect test flakiness~\cite{john-mico-google2016,flakiness-at-spotify}. 
-It reruns tests multiple times. A test that failed and then passed is considered flaky, and vice-versa. The status of a test that persistently failed is unknown, but developers typically treat this scenario as a problem in application code as opposed to a bug in test code. Unfortunately, \rerun{} is unreliable and expensive. It is unreliable because it is hard to determine the number of reruns to find discrepancy in outputs. It is expensive because rerunning tests consumes a lot of computing power. Google, for example, uses 2-16\% of its testing budget just to rerun flaky test~\cite{john-mico-google2016}. Researchers have proposed various techniques to identify flaky tests. Bell~\etal{}~\cite{bell2018d} proposed DeFlaker, a technique that determines that a test is flaky if the output of a test has changed even though there was no change in the code reachable from the execution trace. Note that DeFlaker cannot capture flakiness in test cases not impacted by changes and that change-impacted flaky tests do not reveal flakiness necessarily. Pinto~\etal~\cite{pinto-etal-msr2020} proposed the use of text processing and classification to statically identify likely flaky test cases from the keywords they use. 
+It reruns tests multiple times. A test that failed and then passed is considered flaky, and vice-versa. The status of a test that persistently failed is unknown, but developers typically treat this scenario as a problem in application code as opposed to a bug in test code. Unfortunately, \rerun{} is unreliable and expensive. It is unreliable because it is hard to determine the number of reruns to find discrepancy in outputs. Is is expensive because rerunning tests consumes a lot of computing power. Google, for example, uses 2-16\% of its testing budget just to rerun flaky test~\cite{john-mico-google2016}. Researchers have proposed various techniques to identify flaky tests. Bell~\etal{}~\cite{bell2018d} proposed DeFlaker, a technique that determines that a test is flaky if the output of a test has changed even though there was no change in the code reachable from the execution trace. Note that DeFlaker cannot capture flakiness in test cases not impacted by changes and that change-impacted flaky tests do not reveal flakiness necessarily. Pinto~\etal~\cite{pinto-etal-msr2020} proposed the use of text processing and classification to statically identify likely flaky test cases from the keywords they use. 
 %Important to note that the technique provides indication of likely flakiness, not a verdict. 
 %Overall, existing approaches suffer from different limitations. 
 
@@ -141,7 +141,7 @@ This section presents two examples of flaky tests in Android applications (apps)
 
 %\begin{figure}[t!]
 %    \centering
-%    \includegraphics[width=5cm]{figs/antennapod.eps}
+%    \includegraphics[width=5cm]{figs/antennapod.png}
 %    \caption{AntennaPod.}
 %    \label{fig:antennapod}
 %\end{figure}
@@ -201,8 +201,7 @@ The goal of \tname{} is to detect flaky tests. The observation that motivates \t
 
 \begin{figure}[h]
     \centering
-    \includegraphics[trim=0 400 0 0,clip,width=0.75\textwidth]{figs/shaker.eps}
-    % \includegraphics[trim=0 400 0 0,clip,width=0.75\textwidth]{figs/shaker.pdf}
+    \includegraphics[trim=0 400 0 0,clip,width=0.75\textwidth]{figs/shaker.pdf}
     \caption{\tname's workflow.}
     \label{fig:workflow}
 \end{figure}
@@ -356,7 +355,7 @@ Table~\ref{tab:Apps} shows the \numprojects\ projects we used. The column ``App'
 
 \begin{figure}[t!]
     \centering
-    \includegraphics[trim=0 0 10 50,clip,width=0.35\textwidth,height=0.22\textwidth]{figs/histogram.eps}
+    \includegraphics[trim=0 0 10 50,clip,width=0.35\textwidth,height=0.22\textwidth]{figs/histogram.png}
     \vspace{-2ex}
     \caption{Histogram of test failures.}
     \label{fig:histogram-testfailures}
@@ -457,8 +456,8 @@ We obtained a value of $d=2.52$, which indicates that the effect of introducing 
 Figure~\ref{fig:historgram-random} shows histograms for the distributions of values associated with noisy and noiseless runs. Note that, although some configurations manifest a relative small number of failures (0.15-0.2 range), most executions with noisy configurations raise more failures in tests. The average rate of failures in a noisy execution is 0.37. In contrast, regular executions have average failure rate of 0.09, which is substantially smaller compared with that of noisy runs.
 \begin{figure}[t!]
     \centering
-    \includegraphics[width=0.4\textwidth]{figs/hist-failures-noise.eps}
-    \includegraphics[width=0.4\textwidth]{figs/hist-failures-nonoise.eps}
+    \includegraphics[width=0.4\textwidth]{figs/hist-failures-noise.png}
+    \includegraphics[width=0.4\textwidth]{figs/hist-failures-nonoise.png}
     \vspace{-3ex}
     \caption{Histograms of ratio of failures for execution with and without noise. Vertical lines show average value.}
     \label{fig:historgram-random}
@@ -479,7 +478,7 @@ To answer this question, we randomly selected 15 noise configurations and run th
 
 \begin{figure}[t!]
     \centering
-    \includegraphics[width=0.4\textwidth]{figs/sd-random.eps}
+    \includegraphics[width=0.4\textwidth]{figs/sd-random.png}
     \vspace{-2ex}
     \caption{\label{fig:standard-deviations}Standard deviations of distributions of 10 reruns on each of the 15 randomly-selected configurations.}
     \vspace{-3ex}
@@ -580,7 +579,7 @@ The goal of this research question is to evaluate \tname{}'s performance. To tha
 
 \begin{figure}[t!]
     \centering
-    \includegraphics[width=0.4\textwidth]{figs/auc.eps}
+    \includegraphics[width=0.4\textwidth]{figs/auc.png}
     \vspace{-2ex}
     \caption{Progress over time of \tname\ and \rerun\ in detecting flaky tests.}
     \label{fig:auc}
