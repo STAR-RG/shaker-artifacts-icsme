@@ -14,9 +14,9 @@ RUN rm -f /tmp/commandlinetools-linux-6609375_latest.zip
 RUN yes Y | /Android/tools/bin/sdkmanager --sdk_root=/Android/ "tools"
 
 RUN /Android/tools/bin/sdkmanager --version --sdk_root=/Android/
-RUN yes Y | /Android/tools/bin/sdkmanager  "platforms;android-${ANDROID_API_LEVEL}" "system-images;android-${ANDROID_API_LEVEL};google_apis;x86" "build-tools;${ANDROID_BUILD_TOOLS_LEVEL}"
+RUN yes Y | /Android/tools/bin/sdkmanager  "platforms;android-${ANDROID_API_LEVEL}" "system-images;android-${ANDROID_API_LEVEL};default;x86" "build-tools;${ANDROID_BUILD_TOOLS_LEVEL}"
 RUN yes Y | /Android/tools/bin/sdkmanager --licenses
-RUN echo "no" | /Android/tools/bin/avdmanager create avd --name ${EMULATOR_NAME} --package "system-images;android-${ANDROID_API_LEVEL};google_apis;x86"
+RUN echo "no" | /Android/tools/bin/avdmanager create avd --name ${EMULATOR_NAME} --package "system-images;android-${ANDROID_API_LEVEL};default;x86"
 
 
 ENV ANDROID_HOME=/Android
