@@ -1,9 +1,9 @@
 # Shaker
 
 SHAKER is a lightweight approach to detect flakiness in time-constrained tests by adding noise in the execution environment. This repository is organized in the following structure:
-- the [`dataset`](dataset) folder contains the set of flaky tests we used in the paper;
-- the [`raw_results`](raw_results) folder contains the raw data produced from the evaluation we performed; 
-- the [`evaluation`](evaluation) folder contains the toolset developed for running `Shaker` against the apps listed below and producing the raw data described above.
+- the [`dataset`](ICSME2020/dataset) folder contains the set of flaky tests we used in the paper;
+- the [`raw_results`](ICSME2020/raw_results) folder contains the raw data produced from the evaluation we performed; 
+- the [`evaluation`](ICSME2020/evaluation) folder contains the toolset developed for running `Shaker` against the apps listed below and producing the raw data described above.
 - the [`standalone`](standalone) folder contains the instructions for running `Shaker` in other apps.
 
 ## Setup Instructions
