@@ -27,4 +27,4 @@ This will run all tests of the app given by the `{name_app}` parameter (use the 
 
 #### 4. Examine output
 
-After executing the script, the `results.txt` file will contain the list of tests that failed together with the number of times that it failed.
+After executing the script, the `{NAME_APP}_shaker.csv` file will contain the list of tests that failed together with the number of times that it failed.
