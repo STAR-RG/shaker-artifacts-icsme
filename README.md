@@ -123,8 +123,10 @@ For each project where we found flaky tests, we opened issues:
 ```
 @inproceedings{STA:ICSME2020,
 	author = {Silva, Denini and Teixeira, Leopoldo and d'Amorim, Marcelo},
-	booktitle = {Proceedings of the 36th International Conference on Software Maintenance and Evolution (ICSME 2020)},
+	booktitle={2020 IEEE International Conference on Software Maintenance and Evolution (ICSME)},
 	title = {{Shake It! Detecting Flaky Tests Caused by Concurrency with Shaker}},
-	year = {2020}
+	year = {2020},
+	pages={301-311},
+	doi={10.1109/ICSME46990.2020.00037}
 }
 ```
