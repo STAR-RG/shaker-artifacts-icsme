@@ -7,15 +7,20 @@ import re
 import copy
 import time
 
-RERUNS = 4
 REAL_DIR = glob(os.getcwd())[0]
 OUT_DIR = REAL_DIR + '/outputs/'
 shouldprint = False
 showln = False
 testsFound = {}
-timeLine = []
-lastTime = 0.00
-lastCount = 0
+
+
+def save_fail_tests(dictFail):
+    os.chdir(REAL_DIR)
+
+    with open(f'{NAME_APP}_shaker.csv', 'w') as f:
+        f.write('name, count\n')
+        for test in dictFail:
+            f.write('%s, %d\n' % (test, dictFail[test]))
 
 
 def parserTests(path):
@@ -48,6 +53,8 @@ def parserTests(path):
                             position = test.index('(')
                             # remove the package for test name
                             test = test[:position]
+                            if shouldprint:
+                                print(f'new tst: {test}. line: {ln}')
                             try:
                                 testsFails[test] += 1
                             except KeyError as _:
@@ -58,7 +65,7 @@ def parserTests(path):
                     name = stripped_line[29:]  # get only name
                     if name is not lastName:  # for some logs followed in the same test name
                         lastName = name
-                        allTests[name] = RERUNS
+                        allTests[name] = 1
 
     return allTests, testsFails  # now, de allTests is de passTests
 
@@ -66,7 +73,6 @@ def parserTests(path):
 # cont is the name of outuput file-> out.{count}.txt
 def parserData(output, path):
     global testsFound
-
     path = OUT_DIR + path + '/' + f'{output}'
     os.chdir(path)
     if shouldprint:
@@ -80,7 +86,11 @@ def parserData(output, path):
         except KeyError as _:
             testsFound[test] = dictFail[test]
 
-    return dictFail
+    for t in testsFound:
+        print('%s - %d' % (t, testsFound[t]))
+    print('\n')
+
+    save_fail_tests(testsFound)
 
 
 def runTests(config, cont):
@@ -94,23 +104,9 @@ def runTests(config, cont):
         print(stdout)
 
 
-def p():
-    for test in testsFound.keys():
-        print('%s, %d' % (test, testsFound[test]))
-
-
-def p2():
-    os.chdir(REAL_DIR)
-    f = open("results.txt", "w")
-    for test in testsFound.keys():
-        f.write('%s, %d\n' % (test, testsFound[test]))
-
-    f.close()
-
-
 def main():  # MHS
     for i in range(NUMBER_RANGE):
-        print('-------------> MHS in loop %s <-------------------' % i)
+        print('-------------> MHS in loop %s <-------------------' % (i+1))
         configs = [[i, 2, 2, 1, 21, 2], [i, 1, 58, 1, 33, 2],
                    [i, 1, 61, 1, 73, 4], [i, 1, 34, 1, 37, 1]]
         cont = 0  # out.{cont}.txt
@@ -118,8 +114,6 @@ def main():  # MHS
             cont += 1
             runTests(config, cont)
         parserData(i, NAME_APP)
-        p()
-        p2()
 
 
 if __name__ == "__main__":
@@ -127,7 +121,7 @@ if __name__ == "__main__":
         NUMBER_RANGE = int(argv[1])
         NAME_APP = argv[2]
         PID = int(argv[3])
-        print('number of repetitions is %d\nname app is %s\nPID emulator is %d' %
+        print('**Running SHAKER**\nnumber of repetitions is %d\nname app is %s\nPID emulator is %d' %
               (NUMBER_RANGE, NAME_APP, PID))
         main()
     else:
