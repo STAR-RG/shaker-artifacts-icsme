@@ -28,3 +28,7 @@ This will run all tests of the app given by the `{name_app}` parameter (use the 
 #### 4. Examine output
 
 After executing the script, the `{NAME_APP}_shaker.csv` file will contain the list of tests that failed together with the number of times that it failed.
+
+### ReRun
+
+If you want to run ReRun use the `exec_rerun.py` script, this will run ReRun for 50 times in your app and put the results in `results/{NAME_APP}_rerun.csv` format.
