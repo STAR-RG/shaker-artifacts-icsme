@@ -33,21 +33,18 @@ fi
 base=./outputs/$8/$1
 echo $base
 mkdir -p $base
-for i in $(seq $7);
-do
-  SECONDS=0
-  file=$base/out.$i.txt
 
+SECONDS=0
+file=$base/out.$7.txt
 
-  adb shell settings put global transition_animation_scale 1
-  adb shell settings put global window_animation_scale 1
-  adb shell settings put global animator_duration_scale 1
+#adb shell settings put global transition_animation_scale 1
+#adb shell settings put global window_animation_scale 1
+#adb shell settings put global animator_duration_scale 1
 
-  ./tests.sh >> $file
-  
-  sleep 5
-  echo $SECONDS >> $base/time.txt
-done
+./tests.sh >> $file
+
+sleep 5
+echo $SECONDS >> $base/time.txt
 
 if [ $PID ]
 then
