@@ -76,9 +76,19 @@
 |[zoltar](https://github.com/spotify/zoltar/)    | [6c40b02](https://github.com/spotify/zoltar/tree/6c40b02)|
 |[hadoop](https://github.com/apache/hadoop/)    | [4c033ba](https://github.com/apache/hadoop/tree/4c033ba)|
 |[helix](https://github.com/apache/helix/)    | [94758c8](https://github.com/apache/helix/tree/94758c8)|
-|[appbase](https://github.com/epimorphics/appbase/)    | [ba3c58f](https://github.com/epimorphics/appbase/tree/ba3c58f)|
 
-| []()     | []() |
+|[appbase](https://github.com/epimorphics/appbase/)    | [ba3c58f](https://github.com/epimorphics/appbase/tree/ba3c58f)|
+|[rascal](https://github.com/usethesource/rascal/)    | [919a320](https://github.com/usethesource/rascal/tree/919a320)|
+|[cdap](https://github.com/cdapio/cdap/)    | [f673442](https://github.com/cdapio/cdap/tree/f673442)|
+|[mockito](https://github.com/mockito/mockito)     | [b10d833](https://github.com/mockito/mockito/tree/b10d833) |
+|[asciidoctorj](https://github.com/asciidoctor/asciidoctorj/)    | [06c49ab](https://github.com/asciidoctor/asciidoctorj/tree/06c49ab)|
+|[http-builder-ng](https://github.com/http-builder-ng/http-builder-ng/)    | [3f97e22](https://github.com/http-builder-ng/http-builder-ng/tree/3f97e22)|
+|[opencensus-java](https://github.com/census-instrumentation/opencensus-java/)    | [af7cff2](https://github.com/census-instrumentation/opencensus-java/tree/af7cff2)|
+|[powermock](https://github.com/powermock/powermock/)    | [42c72da](https://github.com/powermock/powermock/tree/42c72da)|
+|[xtext-core](https://github.com/eclipse/xtext-core/)    | [fe8e7cd](https://github.com/eclipse/xtext-core/tree/fe8e7cd)|
+
+
+
 | []()     | []() |
 
 ### Run Shaker with Java
