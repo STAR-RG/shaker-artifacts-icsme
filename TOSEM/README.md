@@ -67,6 +67,7 @@
 |[reactive-grpc](https://github.com/salesforce/reactive-grpc/)    | [ce3b3b2](https://github.com/salesforce/reactive-grpc/tree/ce3b3b2)|
 |[redisson](https://github.com/redisson/redisson/)    | [3a1d2e1](https://github.com/redisson/redisson/tree/3a1d2e1)|
 |[riptide](https://github.com/zalando/riptide/)    | [9a6b067](https://github.com/zalando/riptide/tree/9a6b067)|
+|[dspot](https://github.com/STAMP-project/dspot/)     | [be1896](https://github.com/STAMP-project/dspot/tree/be1896) |
 |[sakai](https://github.com/sakaiproject/sakai/)    | [3640e3c](https://github.com/sakaiproject/sakai/tree/3640e3c)|
 |[smallrye-mutiny](https://github.com/smallrye/smallrye-mutiny/)    | [7f58314](https://github.com/smallrye/smallrye-mutiny/tree/7f58314)|
 |[spring-cloud-sleuth](https://github.com/spring-cloud/spring-cloud-sleuth/)    | [d7c924e](https://github.com/spring-cloud/spring-cloud-sleuth/tree/d7c924e)|
@@ -76,7 +77,7 @@
 |[zoltar](https://github.com/spotify/zoltar/)    | [6c40b02](https://github.com/spotify/zoltar/tree/6c40b02)|
 |[hadoop](https://github.com/apache/hadoop/)    | [4c033ba](https://github.com/apache/hadoop/tree/4c033ba)|
 |[helix](https://github.com/apache/helix/)    | [94758c8](https://github.com/apache/helix/tree/94758c8)|
-
+|[HumBuch](https://github.com/HumBuch/HumBuch/)     | [06e7deb](https://github.com/HumBuch/HumBuch/tree/06e7deb) |
 |[appbase](https://github.com/epimorphics/appbase/)    | [ba3c58f](https://github.com/epimorphics/appbase/tree/ba3c58f)|
 |[rascal](https://github.com/usethesource/rascal/)    | [919a320](https://github.com/usethesource/rascal/tree/919a320)|
 |[cdap](https://github.com/cdapio/cdap/)    | [f673442](https://github.com/cdapio/cdap/tree/f673442)|
@@ -86,9 +87,5 @@
 |[opencensus-java](https://github.com/census-instrumentation/opencensus-java/)    | [af7cff2](https://github.com/census-instrumentation/opencensus-java/tree/af7cff2)|
 |[powermock](https://github.com/powermock/powermock/)    | [42c72da](https://github.com/powermock/powermock/tree/42c72da)|
 |[xtext-core](https://github.com/eclipse/xtext-core/)    | [fe8e7cd](https://github.com/eclipse/xtext-core/tree/fe8e7cd)|
-
-
-
-| []()     | []() |
 
 ### Run Shaker with Java
