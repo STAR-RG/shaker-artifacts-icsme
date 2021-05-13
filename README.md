@@ -1,6 +1,25 @@
 # Shaker
 
-SHAKER is a lightweight approach to detect flakiness in time-constrained tests by adding noise in the execution environment. This repository is organized in the following structure:
+SHAKER is a lightweight approach to detect flakiness in time-constrained tests by adding noise in the execution environment. 
+
+
+
+## How to cite Shaker
+
+```
+@inproceedings{STA:ICSME2020,
+	author = {Silva, Denini and Teixeira, Leopoldo and d'Amorim, Marcelo},
+	booktitle={2020 IEEE International Conference on Software Maintenance and Evolution (ICSME)},
+	title = {{Shake It! Detecting Flaky Tests Caused by Concurrency with Shaker}},
+	year = {2020},
+	pages={301-311},
+	doi={10.1109/ICSME46990.2020.00037}
+}
+```
+
+## Organization
+
+This repository is organized in the following structure:
 - the [`dataset`](ICSME2020/dataset) folder contains the set of flaky tests we used in the paper;
 - the [`raw_results`](ICSME2020/raw_results) folder contains the raw data produced from the evaluation we performed; 
 - the [`evaluation`](ICSME2020/evaluation) folder contains the toolset developed for running `Shaker` against the apps listed below and producing the raw data described above.
@@ -118,15 +137,4 @@ For each project where we found flaky tests, we opened issues:
 * [Paintroid](https://jira.catrob.at/browse/PAINTROID-166)
 * [WiFiAnalyzer](https://github.com/VREMSoftwareDevelopment/WiFiAnalyzer/issues/298)
 
-## How to cite Shaker
 
-```
-@inproceedings{STA:ICSME2020,
-	author = {Silva, Denini and Teixeira, Leopoldo and d'Amorim, Marcelo},
-	booktitle={2020 IEEE International Conference on Software Maintenance and Evolution (ICSME)},
-	title = {{Shake It! Detecting Flaky Tests Caused by Concurrency with Shaker}},
-	year = {2020},
-	pages={301-311},
-	doi={10.1109/ICSME46990.2020.00037}
-}
-```
