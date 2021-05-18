@@ -1,0 +1,6 @@
+test,class
+openBookmarksPanel_showEmptyBookmarksView,org.mozilla.focus.activity.BookmarksTest
+turboMode,org.mozilla.focus.activity.TurboModeSwitcherTest
+browsingWebsiteAndDeleteItsHistoryItem_deleteSuccessfully,org.mozilla.focus.activity.BrowsingHistoryTest
+clearCache,org.mozilla.focus.activity.ClearCacheTest
+openLinkInNewTab,org.mozilla.focus.activity.WebContextMenuTest
